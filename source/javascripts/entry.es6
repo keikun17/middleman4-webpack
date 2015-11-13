@@ -4,6 +4,14 @@ var ReactDom = require('react-dom')
 
 var mountnode = document.getElementById('app');
 
+console.log('Bundle is loaded yo')
+
+var a = () -> {
+  console.log("ES6 works")
+}
+
+console.log(a())
+
 
 var run = function(){
   // ReactDom.render(
