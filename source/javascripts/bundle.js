@@ -55,11 +55,11 @@
 	
 	var mountnode = document.getElementById('app');
 	
-	console.log('Bundle is loaded yo');
+	console.log('Bundle is loaded na yo');
 	
-	// var a = () -> {
-	//   console.log("ES6 works")
-	// }
+	var a = function a() {
+	  console.log("ES6 works");
+	};
 	
 	console.log(a());
 	
