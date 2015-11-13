@@ -1,5 +1,5 @@
 module.exports = {
-  entry: "./source/javascripts/entry.js",
+  entry: "./source/javascripts/entry.es6",
   output: {
     path: "./source/javascripts",
     filename: "bundle.js",
@@ -14,7 +14,12 @@ module.exports = {
       {
         test: /\.(jsx|js|es6)$/,
         exclude: /(node_modules|bower_components)/,
-        loader: "babel", query: {optional: ['runtime'], stage: 0} // optional: ['runtime']
+        loader: "babel",
+        query: {
+          presets: ['es2015']
+        }
+          // optional: ['runtime'],
+          // stage: 0}
       }
 
     ]
