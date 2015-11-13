@@ -70,3 +70,7 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+activate :external_pipeline,
+  name: :webpack,
+  command: build? ? "webpack" : 'webpack --watch -d --progress --color'
