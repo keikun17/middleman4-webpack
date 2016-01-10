@@ -12,7 +12,6 @@ var a = () => {
 
 console.log(a())
 
-
 var run = function(){
   // ReactDom.render(
   //   <AppRootComponent /> , mountnode
